@@ -26,7 +26,12 @@ Ce dossier contient l'extraction détaillée des règles de calcul de la méthod
 | 18 | [18-auxiliaires-installations.md](18-auxiliaires-installations.md) | Consommations d'auxiliaires des installations |
 | 19 | [19-eclairage-photovoltaique.md](19-eclairage-photovoltaique.md) | Éclairage et production d'électricité |
 | 20 | [20-dpe-collectif.md](20-dpe-collectif.md) | DPE dans le collectif |
-| 21 | [21-donnees-climatiques.md](21-donnees-climatiques.md) | Zones climatiques et données annexes |
+| 21 | [21-donnees-climatiques.md](21-donnees-climatiques.md) | Zones climatiques et données de référence (index) |
+| 21a | [21a-donnees-climat-inf400m.md](21a-donnees-climat-inf400m.md) | Données climatiques altitude < 400m |
+| 21b | [21b-donnees-climat-400-800m.md](21b-donnees-climat-400-800m.md) | Données climatiques altitude 400-800m |
+| 21c | [21c-donnees-climat-sup800m.md](21c-donnees-climat-sup800m.md) | Données climatiques altitude >= 800m |
+| 21d | [21d-donnees-climat-inertie-lourde.md](21d-donnees-climat-inertie-lourde.md) | Données bâtiments inertie lourde (parois anciennes) |
+| 21e | [21e-facteur-solaire-coefficients-c1.md](21e-facteur-solaire-coefficients-c1.md) | Facteur couverture solaire + coefficients C1 |
 | 22 | [22-etiquettes-energie-climat.md](22-etiquettes-energie-climat.md) | Étiquettes énergie et climat - Seuils des classes DPE |
 | 23 | [23-tarifs-energie.md](23-tarifs-energie.md) | Évaluation des frais annuels d'énergie |
 | 24 | [24-facteurs-conversion-energie-primaire.md](24-facteurs-conversion-energie-primaire.md) | Facteurs de conversion énergie finale → énergie primaire |
