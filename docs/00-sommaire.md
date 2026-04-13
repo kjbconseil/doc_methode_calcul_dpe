@@ -29,6 +29,7 @@ Ce dossier contient l'extraction détaillée des règles de calcul de la méthod
 | 21 | [21-donnees-climatiques.md](21-donnees-climatiques.md) | Zones climatiques et données annexes |
 | 22 | [22-etiquettes-energie-climat.md](22-etiquettes-energie-climat.md) | Étiquettes énergie et climat - Seuils des classes DPE |
 | 23 | [23-tarifs-energie.md](23-tarifs-energie.md) | Évaluation des frais annuels d'énergie |
+| 24 | [24-facteurs-conversion-energie-primaire.md](24-facteurs-conversion-energie-primaire.md) | Facteurs de conversion énergie finale → énergie primaire |
 
 | CL | [CHANGELOG.md](CHANGELOG.md) | Changelog réglementaire - modifications par arrêtés successifs |
 
@@ -50,3 +51,9 @@ Ce dossier contient l'extraction détaillée des règles de calcul de la méthod
 - NOR : TREL2330369A
 - Publié au Journal Officiel le 20 avril 2024
 - Entrée en vigueur : 1er juillet 2024
+
+**Arrêté du 13 août 2025** modifiant le facteur de conversion de l'énergie finale en énergie primaire de l'électricité.
+
+- NOR : ATDL2519132A
+- Publié au Journal Officiel le 26 août 2025
+- Entrée en vigueur : 1er janvier 2026

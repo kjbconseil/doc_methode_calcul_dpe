@@ -2,6 +2,22 @@
 
 Historique des modifications apportées à la méthode de calcul DPE par les arrêtés successifs.
 
+## Août 2025 - Coefficient d'énergie primaire de l'électricité
+
+**Arrêté du 13 août 2025** modifiant le facteur de conversion de l'énergie finale en énergie primaire de l'électricité relatif au diagnostic de performance énergétique.
+
+- NOR : ATDL2519132A
+- JORF n°0197 du 26 août 2025, Texte 9 sur 49
+- Entrée en vigueur : 1er janvier 2026
+
+### Modification
+
+- Le facteur de conversion de l'énergie finale en énergie primaire pour l'**électricité** passe de **2,3 à 1,9** (alignement sur la valeur par défaut européenne, Directive (UE) 2023/1791, art. 31)
+- Voir [24-facteurs-conversion-energie-primaire.md](24-facteurs-conversion-energie-primaire.md)
+- Les DPE et audits énergétiques en cours de validité peuvent obtenir une attestation de nouvelle étiquette via l'Observatoire DPE-Audit de l'ADEME
+
+---
+
 ## Mars 2024 - Petites surfaces et tarifs d'énergie
 
 **Arrêté du 25 mars 2024** modifiant les seuils des étiquettes du diagnostic de performance énergétique pour les logements de petites surfaces et actualisant les tarifs annuels de l'énergie.

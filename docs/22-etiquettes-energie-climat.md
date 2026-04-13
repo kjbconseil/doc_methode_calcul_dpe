@@ -10,6 +10,8 @@ Le classement se fait selon une échelle de sept classes (A à G) pour deux indi
 
 La classe du logement est déterminée par le **double seuil** CEP/EGES. La classe retenue est la moins bonne des deux.
 
+Le CEP est calculé à partir des consommations d'énergie finale multipliées par les facteurs de conversion en énergie primaire (voir [24-facteurs-conversion-energie-primaire.md](24-facteurs-conversion-energie-primaire.md)).
+
 ## Seuils pour les biens dont Sref > 40 m²
 
 ### Altitude < 800 m
