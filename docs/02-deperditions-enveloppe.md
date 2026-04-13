@@ -60,7 +60,7 @@ DPmenuiserie = SUM(b_i * Smenuiserie_i * Umenuiserie_i)
 
 - On appelle menuiserie l'ensemble vitrage + protection solaire des fenêtres, portes-fenêtres et portes
 - **Attention** : les parois donnant sur un bâtiment autre que d'habitation sont aussi considérées déperditives
-- La surface prise en compte pour l'établissement du DPE est la **surface de référence** du bâtiment. Cette surface intègre les vérandas chauffées
+- La surface prise en compte pour l'établissement du DPE est la **surface de référence** du bâtiment. Cette surface est la surface habitable du bâtiment, à laquelle sont ajoutées les surfaces des vérandas chauffées ainsi que les surfaces des locaux chauffés pour l'usage principal d'occupation humaine, d'une hauteur sous plafond d'au moins 1,80 m
 - En présence d'un espace non habitable chauffé (par exemple un garage ou un sous-sol), cet espace est traité dans le DPE comme un espace non chauffé. Dans ce cas, le diagnostiqueur devra obligatoirement mentionner dans le rapport que cet espace ne doit pas être chauffé et intégrer ce commentaire dans la justification des écarts entre les factures et les consommations conventionnelles
 
 ## Sources
