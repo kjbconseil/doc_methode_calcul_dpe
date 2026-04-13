@@ -108,38 +108,38 @@ Avec :
 | VMC SF Auto réglable < 1982 | 1.97 | 0 | 2 |
 | VMC SF Auto réglable de 1982 a 2000 | 1.65 | 0 | 2 |
 | VMC SF Auto réglable de 2001 a 2012 | 1.50 | 0 | 2 |
-| VMC SF Auto réglable apres 2012 | 1.44 | 0 | 2 |
+| VMC SF Auto réglable apres 2012 | 1.32 | 0 | 2 |
+| VMC SF Hygro A < 2001 | 1.50 | 0 | 2 |
 | VMC SF Hygro A de 2001 a 2012 | 1.44 | 0 | 2 |
-| VMC SF Hygro A apres 2012 | 1.31 | 0 | 2 |
-| VMC SF Gaz < 2001 | 1.58 | 0 | 2 |
+| VMC SF Hygro A apres 2012 | 1.16 | 0 | 2 |
+| VMC SF Gaz < 2001 | 1.59 | 0 | 2 |
 | VMC SF Gaz de 2001 a 2012 | 1.53 | 0 | 2 |
 | VMC SF Gaz apres 2012 | 1.22 | 0 | 2 |
 | VMC SF Hygro B < 2001 | 1.36 | 0 | 1.5 |
 | VMC SF Hygro B de 2001 a 2012 | 1.24 | 0 | 1.5 |
 | VMC SF Hygro B apres 2012 | 1.09 | 0 | 1.5 |
-| VMC Basse pression Auto réglable | 1.37 | 0 | 1 |
+| VMC Basse pression Auto réglable | 1.97 | 0 | 2 |
 | VMC Basse pression Hygro A | 1.30 | 0 | 2 |
 | VMC Basse pression Hygro B | 1.24 | 0 | 1.5 |
-| VMC DF individuelle avec échangeur < 2012 | 0.40 | 0.65 | 0 |
+| VMC DF individuelle avec échangeur <= 2012 | 0.60 | 0.6 | 0 |
 | VMC DF individuelle avec échangeur apres 2012 | 0.26 | 0.26 | 0 |
-| VMC DF collective sans échangeur < 2001 | 0.25 | 0.75 | 0 |
+| VMC DF collective avec échangeur <= 2012 | 0.75 | 0.75 | 0 |
 | VMC DF collective avec échangeur apres 2012 | 0.46 | 0.46 | 0 |
-| VMC DF sans échangeur < 2012 | 1.63 | 1.63 | 0 |
+| VMC DF sans échangeur <= 2012 | 1.65 | 1.65 | 0 |
 | VMC DF sans échangeur apres 2012 | 1.32 | 1.32 | 0 |
 | Ventilation naturelle par conduit | 2.23 | 0 | 4 |
-| Ventilation hybride < 2001 | 1.53 | 0 | 3 |
+| Ventilation hybride < 2001 | 1.52 | 0 | 3 |
 | Ventilation hybride de 2001 a 2012 | 1.33 | 0 | 3 |
-| Ventilation hybride apres 2012 | 1.57 | 0 | 3 |
-| Ventilation hybride avec entrees d'air hygro < 2001 | 1.12 | 0 | 2 |
-| Ventilation hybride avec entrees d'air hygro de 2001 a 2012 | 1.13 | 0 | 2 |
+| Ventilation hybride apres 2012 | 1.17 | 0 | 3 |
+| Ventilation hybride avec entrees d'air hygro < 2001 | 1.52 | 0 | 2 |
+| Ventilation hybride avec entrees d'air hygro de 2001 a 2012 | 1.33 | 0 | 2 |
 | Ventilation hybride avec entrees d'air hygro apres 2012 | 1.17 | 0 | 2 |
 | Ventilation mecanique sur conduit existant < 2012 | 2.24 | 0 | 4 |
 | Ventilation mecanique sur conduit existant apres 2012 | 1.97 | 0 | 4 |
-| Ventilation mécanique par insufflation | 2.25 | 0 | 4 |
-| Ventilation naturelle par conduit avec entrées d'air hygro | 2.23 | 0 | 4 |
+| Ventilation naturelle par conduit avec entrées d'air hygro | 2.23 | 0 | 3 |
 | Puits climatique sans échangeur < 2012 | 0.99 | 0.99 | 0 |
 | Puits climatique sans échangeur apres 2012 | 0.79 | 0.79 | 0 |
-| Puits climatique avec échangeur < 2012 | 0.31 | 0.36 | 0 |
+| Puits climatique avec échangeur <= 2012 | 0.36 | 0.36 | 0 |
 | Puits climatique avec échangeur apres 2012 | 0.16 | 0.16 | 0 |
 
 ### Cas des VMC par insufflation

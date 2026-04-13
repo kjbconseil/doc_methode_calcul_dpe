@@ -4,7 +4,7 @@
 
 ### Données d'entrée
 
-- Departement
+- Département
 - Altitude
 
 ### Définition
@@ -33,12 +33,12 @@ Avec :
 - `GV` : déperditions de l'enveloppe en W/K (calculées dans la partie 3)
 - `DH_j` : degrés heures de chauffage sur le mois j (°Ch), déterminés à partir des tableaux des paragraphes 18.2 et 18.3 :
   - DH19 pour une consigne de chauffage a 19°C (comportement conventionnel)
-  - DH21 pour une consigne de chauffage a 21°C (comportement dépasseur)
+  - DH21 pour une consigne de chauffage a 21°C (comportement dépasser)
 - `Ai_j` : apports internes dans le logement sur le mois j (Wh)
 
 ### Calcul des apports internes Ai_j
 
-Le fonctionnement permanent du fonctionnement lie à l'occupation, on considéré que la puissance de chaleur degagee par l'ensemble des équipements est conventionnellement de :
+Le fonctionnement permanent du fonctionnement lie à l'occupation, on considéré que la puissance de chaleur dégagée par l'ensemble des équipements est conventionnellement de :
 - **5.7 W/m²** en occupation hors période de sommeil
 - **1.1 W/m²** en inoccupation et pendant le sommeil
 
@@ -48,14 +48,14 @@ Le scénario conventionnel d'occupation hebdomadaire des logements est le suivan
 - De 0h à 24h les samedi et dimanche avec une période de sommeil allant de 0h à 6h et de 22h à 24h
 
 Soit sur une semaine :
-- 133h d'occupation dont 56h de sommeil
+- 132h d'occupation dont 56h de sommeil
 - 36h d'inoccupation
 
 Les apports internes moyens dus aux équipements sur une semaine type sont donc de **3.18 W/m²**.
 
 A ces apports il faut ajouter :
-- **Ceux de l'éclairage** : qui correspondent à une puissance moyenne de 1.4 W/m² en fonctionnement. Les apports d'éclairage sont des moyennes annuelles sur toutes les zones climatiques. Cette valeur est pondérée par le nombre d'heures moyen d'éclairage (voir paragraphe 16.1, sur l'année c'est-a-dire 2173 h soit P167)
-  - Les apports moyens annuels d'éclairage correspondant donc a 1.4 * 2173/8760 = **0.36 W/m²**
+- **Ceux de l'éclairage** : qui correspondent à une puissance moyenne de 1.4 W/m² en fonctionnement. Les apports d'éclairage sont des moyennes annuelles sur toutes les zones climatiques. Cette valeur est pondérée par le nombre d'heures moyen d'éclairage (voir paragraphe 16.1, sur l'année c'est-a-dire 2123 h sur 8760 h)
+  - Les apports moyens annuels d'éclairage correspondant donc a 1.4 * 2123/8760 = **0.34 W/m²**
 - **Ceux des occupants** : on considéré un apport de chaleur de 90W par adulte équivalent (variable N_adeq déterminée au paragraphe 11.1). Le nombre d'adultes équivalents est calculé en fonction de la surface de référence. Les apports de chaleur dus aux occupants sont donc a N99 * N_adeq * 90/Sref
 
 ### Formule des apports internes en période de chauffe
@@ -70,12 +70,12 @@ Avec :
 - `Sref` : surface de référence du logement (m²)
 - `N_adeq` : nombre d'adultes équivalents (voir paragraphe 11.1)
 - `3.18` : apports internes moyens des équipements (W/m²)
-- `0.34` : apports moyens annuels d'éclairage (W/m²) (= 1.4 * 2173/8760)
+- `0.34` : apports moyens annuels d'éclairage (W/m²) (= 1.4 * 2123/8760)
 - `90` : apport de chaleur par adulte équivalent (W)
 - `132/168` : ratio heures d'occupation / heures totales par semaine
 - `Nref_j` : nombre d'heures de chauffage pour le mois j, déterminés à partir des tableaux des paragraphes 18.2 et 18.3
   - Nref (19°C) pour une consigne de chauffage a 19°C (comportement conventionnel)
-  - Nref (21°C) pour une consigne de chauffage a 21°C (comportement dépasseur)
+  - Nref (21°C) pour une consigne de chauffage a 21°C (comportement dépasser)
 
 Pour une année complète, Nref est évalué seulement sur la saison de chauffé avec :
 
@@ -93,7 +93,7 @@ As_j = 1000 * Sse_j * E_j
 
 En présence d'une véranda ou autre espace solarisé non chauffé, si ces apports solaires s'ajoutent ceux à travers cet espace, le calcul des apports solaires à travers un espace solarisé non chauffé est decrit au paragraphe 6.3.
 
-- `Sse_j` : surface transparente sud équivalente du logement, c'est-a-dire la surface de paroi, fictive, exposee au sud, totalement transparente et sans ombrage, qui procurerait les mêmes apports solaires que les parois du logement, pour le mois j (m²) (voir partie 6.2)
+- `Sse_j` : surface transparente sud équivalente du logement, c'est-a-dire la surface de paroi, fictive, exposée au sud, totalement transparente et sans ombrage, qui procurerait les mêmes apports solaires que les parois du logement, pour le mois j (m²) (voir partie 6.2)
 - `E_j` : ensoleillement recu, sur le mois j, par une paroi verticale orientée au sud en absence d'ombrage (kWh/m²)
 
 ### En période de refroidissement
@@ -107,7 +107,7 @@ Ai_fr_j = ((3.18 + 0.34) * Sref + 90 * (132/168) * N_adeq) * Nref_j
 Avec :
 - `Nref_j` : nombre d'heures de chauffage pour le mois j, déterminé à partir des tableaux des paragraphes 18.2 et 18.3
   - Nref (28°C) pour une consigne de refroidissement a 28°C (comportement conventionnel)
-  - Nref (26°C) pour une consigne de refroidissement a 26°C (comportement dépasseur)
+  - Nref (26°C) pour une consigne de refroidissement a 26°C (comportement dépasser)
 
 Pour une année complète, Nref est évalué uniquement sur la saison de refroidissement avec :
 
@@ -124,7 +124,7 @@ As_fr_j = 1000 * Sse_j * E_j * fr_j
 Avec :
 - `I_j * N_j` : ensoleillement recu en période de refroidissement, sur le mois j, par une paroi verticale orientée au sud en absence d'ombrage (kWh/m²), déterminé à partir des tableaux des paragraphes 18.2 et 18.3
   - E_j N_j (19°C) pour une consigne de chauffage a 19°C (comportement conventionnel)
-  - E_j N_j (21°C) pour une consigne de chauffage a 21°C (comportement dépasseur)
+  - E_j N_j (21°C) pour une consigne de chauffage a 21°C (comportement dépasser)
 
 - `Sse_j` : Surface transparente sud équivalente = du logement en refroidissement pour le mois j (m²)
 
@@ -158,18 +158,18 @@ Sse_j = SUM(A_i * Sw_i * Fe_i * C1_(i,j))
 
 Avec :
 - `A_i` : surface de la baie i (m²)
-- `Sw_i` : proportion d'énergie solaire incidente qui penetre dans le logement par la paroi vitree i
-- `Fe_i` : facteur d'ensoleillement, qui traduit la réduction d'énergie solaire recue par une paroi vitree du fait des masques
-- `C1_(i,j)` : coefficient d'orientation et d'inclinaison pour la paroi vitree i pour le mois j, voir paragraphe 18.5
+- `Sw_i` : proportion d'énergie solaire incidente qui pénètre dans le logement par la paroi vitrée i
+- `Fe_i` : facteur d'ensoleillement, qui traduit la réduction d'énergie solaire reçue par une paroi vitrée du fait des masques
+- `C1_(i,j)` : coefficient d'orientation et d'inclinaison pour la paroi vitrée i pour le mois j, voir paragraphe 18.5
 
 La surface vitree des portes n'est pas prise en compte dans le calcul de Sse_j.
 
 ### 6.2.1 Détermination du facteur solaire Sw
 
-La proportion d'énergie solaire incidente qui penetre dans le logement à travers une paroi est donnée par :
+La proportion d'énergie solaire incidente qui pénètre dans le logement à travers une paroi est donnée par :
 
 - Pour les parois en polycarbonate : **Sw = 0.4**
-- Pour les doubles-fenêtres composees de deux fenêtres de facteur solaire Sw1 et Sw2, le facteur solaire de la double-fenêtre est : **Sw = Sw1 + Sw2**
+- Pour les doubles-fenêtres composées de deux fenêtres de facteur solaire Sw1 et Sw2, le facteur solaire de la double-fenêtre est : **Sw = Sw1 + Sw2**
 
 Si les facteurs solaires des menuiseries sont connus et justifiés, les saisir directement.
 
@@ -201,7 +201,7 @@ Si les facteurs solaires des menuiseries sont connus et justifiés, les saisir d
 
 ### 6.2.2 Détermination du facteur d'ensoleillement Fe
 
-On considéré successivement les obstacles lies au bâtiment (balcons, loggias, avancees...) et les obstacles lies à l'environnement (autres bâtiments, reliefs, vegetation...). On obtient ainsi deux coefficients, Fe1 et Fe2, dont on fait le produit :
+On considéré successivement les obstacles lies au bâtiment (balcons, loggias, avancées...) et les obstacles lies à l'environnement (autres bâtiments, reliefs, vegetation...). On obtient ainsi deux coefficients, Fe1 et Fe2, dont on fait le produit :
 
 ```
 Fe = Fe1 * Fe2
@@ -234,14 +234,14 @@ Conventionnellement, les orientations Nord, Sud, Est et Ouest correspondent aux 
 
 ##### Baie masquee par une paroi latérale
 
-Une paroi latérale est considérée faire obstacle si les angles beta et gamma sont superieurs a 30°. Les angles sont pris au centre des baies.
+Une paroi latérale est considérée faire obstacle si les angles beta et gamma sont supérieurs a 30°. Les angles sont pris au centre des baies.
 
 | Position du retour | Fe1 |
 |--------------------|-----|
 | Le retour ne fait pas obstacle au Sud | 0.7 |
 | Le retour fait obstacle au Sud | 0.5 |
 
-**Attention** : en présence de plusieurs types de masques proches, seul l'impact du masque le plus penalisant est pris en compte.
+**Attention** : en présence de plusieurs types de masques proches, seul l'impact du masque le plus pénalisant est pris en compte.
 
 #### 6.2.2.2 Masques lointains
 
@@ -265,7 +265,7 @@ Avec :
 - `Omb_i` : l'ombrage cree par l'obstacle sur la paroi
 
 La méthode d'évaluation :
-1. On decoupe le champ de vision en quatre secteurs d'gaux
+1. On découpe le champ de vision en quatre secteurs égaux
 2. On déterminé, pour chacun d'eux, la hauteur moyenne des obstacles
 3. On lit dans le tableau ci-dessous les valeurs correspondantes de l'ombrage, Omb_i
 
@@ -283,7 +283,7 @@ Les masques lointains sont evalues au niveau de la baie la plus proche du centre
 
 ## 6.3 Traitement des espaces tampons solarisés
 
-Un logement donnant sur un espace tampon solarisé (véranda, loggia fermee) est influence dans son bilan énergétique par les apports solaires. Il en existe deux types.
+Un logement donnant sur un espace tampon solarisé (véranda, loggia fermée) est influence dans son bilan énergétique par les apports solaires. Il en existe deux types.
 
 ### Apports solaires à travers un espace tampon solarisé
 
@@ -295,7 +295,7 @@ As(ets_j) = 1000 * Sse(veranda_j) * E_j
 
 Avec :
 - `I_j` : ensoleillement recu par paroi verticale orientée au sud en l'absence d'ombrage sur le mois j (kWh/(m².K))
-- `Sse(veranda_j)` : surface sud équivalente representant l'impact des apports solaires associés au rayonnement solaire traversant directement l'espace tampon solarisé pour arriver dans la partie habitable du logement (apports directs) et representant l'impact de l'espace tampon solarisé sur les apports solaires à travers les baies vitrees, modélisé par une surface sud équivalente pour le mois j (Sse(véranda_j))
+- `Sse(veranda_j)` : surface sud équivalente représentant l'impact des apports solaires associés au rayonnement solaire traversant directement l'espace tampon solarisé pour arriver dans la partie habitable du logement (apports directs) et représentant l'impact de l'espace tampon solarisé sur les apports solaires à travers les baies vitrées, modélisé par une surface sud équivalente pour le mois j (Sse(véranda_j))
 
 ```
 Sse(veranda_j) = Ssd_j + Ssind_j + Ssbe_j
@@ -312,7 +312,7 @@ Avec :
 - `Sw_i` : Facteur solaire de la baie i séparant le logement de l'espace tampon solarisé
 - `Fe_i` : Facteur d'ensoleillement, qui traduit la réduction d'énergie solaire recue par la baie i du fait des masques (la présence de l'espace tampon solarisé n'est pas prise en compte pour déterminer ce coefficient)
 - `C1_(i,j)` : Coefficient d'orientation et d'inclinaison de la baie i séparant le logement de l'espace tampon solarisé pour le mois j, voir paragraphe 18.5
-- `T` : Coefficient representant la transparence de l'espace tampon solarisé. Il correspond à l'estimation du rayonnement solaire arrivant directement dans le logement par la traverse de l'espace tampon solarisé
+- `T` : Coefficient représentant la transparence de l'espace tampon solarisé. Il correspond à l'estimation du rayonnement solaire arrivant directement dans le logement par la traverse de l'espace tampon solarisé
 
 #### Transparence T par type de vitrage
 

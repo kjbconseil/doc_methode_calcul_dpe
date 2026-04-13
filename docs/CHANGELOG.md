@@ -69,24 +69,24 @@ L'Art. 2, 2° remplace intégralement l'Annexe « Méthode de calcul 3CL-DPE 202
 
 | Zone | Orientation | Paroi | b_vu Mars 2021 | b_vu Octobre 2021 |
 |------|------------|-------|---------------|------------------|
-| H1 | Nord | Non isolé | 0.85 | **0.95** |
-| H1 | Nord | Isolé | 0.65 | **0.85** |
+| H1 | Nord | Isolé | 0.65 | **0.95** |
+| H1 | Nord | Non isolé | 0.85 | **0.85** |
+| H1 | Est/Ouest | Isolé | 0.4 | **0.63** |
 | H1 | Est/Ouest | Non isolé | 0.6 | **0.6** |
-| H1 | Est/Ouest | Isolé | 0.4 | **0.58** |
+| H1 | Sud | Isolé | 0.18 | **0.58** |
 | H1 | Sud | Non isolé | 0.55 | **0.55** |
-| H1 | Sud | Isolé | 0.18 | **0.63** |
-| H2 | Nord | Non isolé | 0.85 | **0.95** |
-| H2 | Nord | Isolé | 0.65 | **0.85** |
-| H2 | Est/Ouest | Non isolé | 0.58 | **0.6** |
-| H2 | Est/Ouest | Isolé | 0.5 | **0.58** |
-| H2 | Sud | Non isolé | 0.55 | **0.57** |
-| H2 | Sud | Isolé | 0.35 | **0.17** |
-| H3 | Nord | Non isolé | 0.95 | **0.95** |
-| H3 | Nord | Isolé | 0.85 | **0.85** |
-| H3 | Est/Ouest | Non isolé | 0.55 | **0.53** |
+| H2 | Nord | Isolé | 0.65 | **0.95** |
+| H2 | Nord | Non isolé | 0.85 | **0.85** |
+| H2 | Est/Ouest | Isolé | 0.5 | **0.6** |
+| H2 | Est/Ouest | Non isolé | 0.58 | **0.58** |
+| H2 | Sud | Isolé | 0.35 | **0.57** |
+| H2 | Sud | Non isolé | 0.55 | **0.55** |
+| H3 | Nord | Isolé | 0.85 | **0.95** |
+| H3 | Nord | Non isolé | 0.95 | **0.85** |
 | H3 | Est/Ouest | Isolé | 0.5 | **0.53** |
-| H3 | Sud | Non isolé | 0.6 | **0.4** |
-| H3 | Sud | Isolé | 0.55 | **0.55** |
+| H3 | Est/Ouest | Non isolé | 0.55 | **0.53** |
+| H3 | Sud | Isolé | 0.55 | **0.48** |
+| H3 | Sud | Non isolé | 0.6 | **0.55** |
 
 ### Section 3.2 - Parois opaques
 
@@ -95,14 +95,14 @@ L'Art. 2, 2° remplace intégralement l'Annexe « Méthode de calcul 3CL-DPE 202
 ### Section 4 - Déperditions par renouvellement d'air
 
 - **Ventilation par ouverture des fenêtres** : Qvarep_conv passé de **2.60** à **1.2** m³/(h.m²)
-- **Nouveau type ajouté** : « Ventilation naturelle par conduit avec entrées d'air hygro » : Qvarep_conv = 2.23, Smea_conv = 4
+- **Nouveau type ajouté** : « Ventilation naturelle par conduit avec entrées d'air hygro » : Qvarep_conv = 2.23, Smea_conv = 3
 - **Nouvelle règle pour Q4Pa_conv** : Pour les bâtiments construits avant 1948 et dont les menuiseries possèdent des joints, Q4Pa_conv = 2.5 m³/(h.m²). Cette condition est respectée si les menuiseries représentant plus de 50% de la surface totale possèdent des joints.
 
 ### Section 6.1 - Apports gratuits
 
 - **Scénario d'occupation modifié** :
   - Ancien : 113h d'occupation, 55h d'inoccupation
-  - Nouveau : **133h d'occupation** dont 56h de sommeil, **36h d'inoccupation** (sur 168h = 1 semaine)
+  - Nouveau : **132h d'occupation** dont 56h de sommeil, **36h d'inoccupation** (sur 168h = 1 semaine)
 - **Formule Ai_j mise à jour** avec le nouveau ratio d'occupation :
   ```
   Ai_j = ((3.18 + 0.34) * Sh + 90 * (132/168) * N_adeq) * Nref_j
