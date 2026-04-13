@@ -42,14 +42,14 @@ Le fonctionnement permanent du fonctionnement lie à l'occupation, on considér�
 - **5.7 W/m²** en occupation hors période de sommeil
 - **1.1 W/m²** en inoccupation et pendant le sommeil
 
-Le scenario conventionnel d'occupation hebdomadaire des logements est le suivant :
-- De 0h a 6h et de 17h a 24h avec une période de sommeil allant de 0h a 6h et de 22h a 24h (lu-ve/sa-di, mardi, jeudi et samedi matin)
-- De 0h a 19h et de 1h a 24h avec une période de sommeil allant de 0h a 6h et de 22h a 24h le mercredi
-- De 0h a 24h les samedis et dimanche avec une période de sommeil allant de 0h a 6h et de 22h a 24h
+Le scénario conventionnel d'occupation hebdomadaire des logements est le suivant :
+- De 0h à 9h et de 17h à 24h avec une période de sommeil allant de 0h à 6h et de 22h à 24h les lundi, mardi, jeudi et vendredi
+- De 0h à 9h et de 13h à 24h avec une période de sommeil allant de 0h à 6h et de 22h à 24h le mercredi
+- De 0h à 24h les samedi et dimanche avec une période de sommeil allant de 0h à 6h et de 22h à 24h
 
 Soit sur une semaine :
-- 113h d'occupation dont 54h de sommeil
-- 55h d'inoccupation
+- 133h d'occupation dont 56h de sommeil
+- 36h d'inoccupation
 
 Les apports internes moyens dus aux équipements sur une semaine type sont donc de **3.18 W/m²**.
 
@@ -63,7 +63,7 @@ A ces apports il faut ajouter :
 Les apports internes sur le mois j (en Wh) en période de chauffé sont donc :
 
 ```
-Ai_j = (3.18 + 0.34) * Sh + 90 * (172/168) * N_adeq * Nref_j
+Ai_j = ((3.18 + 0.34) * Sh + 90 * (132/168) * N_adeq) * Nref_j
 ```
 
 Avec :
@@ -72,7 +72,7 @@ Avec :
 - `3.18` : apports internes moyens des équipements (W/m²)
 - `0.34` : apports moyens annuels d'éclairage (W/m²) (= 1.4 * 2173/8760)
 - `90` : apport de chaleur par adulte équivalent (W)
-- `172/168` : ratio heures d'occupation / heures totales par semaine
+- `132/168` : ratio heures d'occupation / heures totales par semaine
 - `Nref_j` : nombre d'heures de chauffage pour le mois j, déterminés à partir des tableaux des paragraphes 18.2 et 18.3
   - Nref (19°C) pour une consigne de chauffage a 19°C (comportement conventionnel)
   - Nref (21°C) pour une consigne de chauffage a 21°C (comportement dépasseur)
@@ -101,7 +101,7 @@ En présence d'une véranda ou autre espace solarisé non chauffé, si ces appor
 De la même manière, les apports internes sur le mois j en période de refroidissement sont donc :
 
 ```
-Ai_fr_j = (3.18 + 0.34) * Sh + 90 * (172/168) * N_adeq * Nref_j
+Ai_fr_j = ((3.18 + 0.34) * Sh + 90 * (132/168) * N_adeq) * Nref_j
 ```
 
 Avec :
@@ -153,7 +153,7 @@ Avec :
 La prise en compte des apports solaires exige à minima une valeur par facade des fenêtres du bâtiment. Le calcul de la surface sud équivalente se fait en sommant les valeurs de Sse pour chaque paroi vitree :
 
 ```
-Sse_j = SUM(A_i * Sw_i * Sw_i * Fe_i * C1_(i,j))
+Sse_j = SUM(A_i * Sw_i * Fe_i * C1_(i,j))
 ```
 
 Avec :
@@ -252,8 +252,8 @@ Une paroi latérale est considérée faire obstacle si les angles beta et gamma 
 | | Sud | Est ou Ouest | Nord |
 | < 15 | 1 | 1 | 1 |
 | 15 <= h < 30 | 0.8 | 0.77 | 0.82 |
-| 30 <= h < 45 | 0.3 | 0.4 | 0.6 |
-| 45 <= h < 60 | 0.1 | 0.2 | 0.3 |
+| 30 <= h < 60 | 0.3 | 0.4 | 0.6 |
+| 60 <= h < 90 | 0.1 | 0.2 | 0.3 |
 
 ##### Obstacle d'environnement non homogène
 
@@ -348,14 +348,14 @@ Avec :
 - `SsT_j` : Surface sud équivalente representant l'impact des apports solaires associés au rayonnement solaire arrivant dans la partie habitable du logement apres de multiples reflexions dans l'espace tampon solarisé (apports indirects) pour le mois j. Ssind correspond à la surface sud équivalente des apports totaux dans la véranda Ss, de laquelle il faut déduire elle des apports directs Ssd.
 
 ```
-SsT_j = SUM(A_i * (0.8 * Sw_i + 0.0124) * Fe_j * C1_(i,j))
+SsT_j = SUM(A_k * (0.8 * T + 0.024) * Fe_k * C1_(k,j))
 ```
 
 Avec :
-- `A_i` : Surface de la baie i séparant la véranda de l'extérieur (m²)
-- `Sw_i` : facteur solaire de la baie i séparant la véranda de l'extérieur (m²)
-- `Fe_j` : facteur d'ensoleillement. Pour les espaces tampons solarisés, Fe_j = 1 car l'impact des masques sera multiplie
-- `C1_(i,j)` : Coefficient d'orientation et d'inclinaison de la baie i séparant la véranda de l'extérieur pour le mois j, voir paragraphe 18.5
+- `A_k` : Surface de la baie k séparant la véranda de l'extérieur (m²)
+- `T` : coefficient de transparence de l'espace tampon solarisé (voir tableau ci-dessus)
+- `Fe_k` : facteur d'ensoleillement. Pour les espaces tampons solarisés, Fe_k = 1 car l'impact des masques sera multiplié
+- `C1_(k,j)` : Coefficient d'orientation et d'inclinaison de la baie k séparant la véranda de l'extérieur pour le mois j, voir paragraphe 18.5
 
 Les grandes surfaces vitrees séparant la véranda de l'extérieur seront traitées comme des portes-fenêtres avec des menuiseries au nu extérieur.
 

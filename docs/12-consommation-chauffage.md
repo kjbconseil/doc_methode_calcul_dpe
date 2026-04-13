@@ -32,7 +32,7 @@ Avec :
 ### Pertes récupérées de distribution d'ECS pour le chauffage sur le mois j (Wh)
 
 ```
-Q(rec_chauf_j) = 0.48 * Nref_j * (1/1000) * Q(dis_recup_j) / 8760
+Q(rec_chauf_j) = 0.48 * Nref_j * (Q(dis_ind_j) + Q(dis_col_j)) / 8760
 ```
 
 Avec :
@@ -71,7 +71,7 @@ Dper_j = Nref_j * 1790/8760
 
 **Pour les générateurs assurant le chauffage ET l'ECS** :
 ```
-Dper_j = max(Nref_j * (1.3 + Rch(ch_j)) / (0.3 + Pn) + Nref_j * 1790/8760)
+Dper_j = max(Nref_j * (1.3 + Rch(ch_j)) / (0.3 + Pn), Nref_j * 1790/8760)
 ```
 
 Avec :
@@ -223,7 +223,7 @@ Avec règles de prorata pour les cas de plusieurs salles de bain de surface S(sd
 
 **Cch1 liee au système principal (kWh PCI)** :
 ```
-Cch1 = 0.25 * 0.9 * Bch * INT1 * Ich1
+Cch1 = 0.75 * 0.9 * Bch * INT1 * Ich1
 ```
 
 

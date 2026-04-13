@@ -32,29 +32,31 @@ Dans les autres cas, b est déterminé à l'aide des tableaux suivants, en fonct
 - `Aue` est la surface des parois du local non chauffé donnant sur **l'extérieur** ou en contact avec le sol (parois enterrees, terre-plein)
 - Il est considéré qu'il n'y a pas d'échange entre deux locaux non chauffés distincts (sans liaison aéraulique). La surface des parois du local non chauffé donnant sur un vide sanitaire ou un autre local non chauffé n'entre donc ni dans Aiu ni dans Aue
 
+> **Règle ajoutée (Octobre 2021)** : Dans le cas où Aue = 0, alors **b = 0**
+
 ### Tableau : Coefficient surfacique équivalent Uv_ue
 
 | Local non chauffé | Uv_ue W/(m².K) |
 |-------------------|----------------|
 | **Maison individuelle** | |
-| Garage | 3 |
+| Garage | 5 |
 | Cellier | 3 |
 | Comble fortement ventilé | 9 |
 | Comble faiblement ventilé | 3 |
-| Comble tres faiblement ventilé | 0.3 |
+| Comble très faiblement ventilé | 0.3 |
 | **Logement collectif** | |
-| Circulation commune sans ouverture directe sur l'extérieur | 0.5 |
-| Circulation commune avec ouverture directe sur l'extérieur | 5 |
-| Circulation commune avec bouche ou gaine de désenfumage, ouverte en permanence | 1re ou 0.8 (1)(2) |
-| Hall d'entrée | 3 |
-| Garage prive collectif | 3 |
-| Autres dependances | 3 |
+| Circulation commune sans ouverture directe sur l'extérieur | 0.0 |
+| Circulation commune avec ouverture directe sur l'extérieur | 0.3 |
+| Circulation commune avec bouche ou gaine de désenfumage, ouverte en permanence | 1 |
+| Hall d'entrée | 3(1) ou 0.3(2) |
+| Garage privé collectif | 3 |
+| Autres dépendances | 3 |
 | Comble fortement ventilé | 9 |
 | Comble faiblement ventilé | 3 |
-| Comble tres faiblement ventilé | 0.3 |
+| Comble très faiblement ventilé | 0.3 |
 
-*(1) Portes d'acces avec dispositif de fermeture automatique*
-*(2) Portes d'acces avec dispositif de fermeture automatique*
+*(1) Portes d'accès sans dispositif de fermeture automatique*
+*(2) Portes d'accès avec dispositif de fermeture automatique*
 
 ### Vérandas et loggias non chauffées
 
@@ -66,23 +68,23 @@ Dans le cas de vérandas ou loggias fermees non chauffées, les coefficients de 
 
 | Zone climatique | Orientation de la véranda | Paroi donnant sur la véranda | b_vu |
 |-----------------|--------------------------|------------------------------|------|
-| H1 | Nord | Non isolé | 0.85 |
-| | | Isolé | 0.65 |
+| H1 | Nord | Non isolé | 0.95 |
+| | | Isolé | 0.85 |
 | | Est / Ouest | Non isolé | 0.6 |
-| | | Isolé | 0.4 |
+| | | Isolé | 0.58 |
 | | Sud | Non isolé | 0.55 |
-| | | Isolé | 0.18 |
-| H2 | Nord | Non isolé | 0.85 |
-| | | Isolé | 0.65 |
-| | Est / Ouest | Non isolé | 0.58 |
-| | | Isolé | 0.5 |
-| | Sud | Non isolé | 0.55 |
-| | | Isolé | 0.35 |
+| | | Isolé | 0.63 |
+| H2 | Nord | Non isolé | 0.95 |
+| | | Isolé | 0.85 |
+| | Est / Ouest | Non isolé | 0.6 |
+| | | Isolé | 0.58 |
+| | Sud | Non isolé | 0.57 |
+| | | Isolé | 0.17 |
 | H3 | Nord | Non isolé | 0.95 |
 | | | Isolé | 0.85 |
-| | Est / Ouest | Non isolé | 0.55 |
-| | | Isolé | 0.5 |
-| | Sud | Non isolé | 0.6 |
+| | Est / Ouest | Non isolé | 0.53 |
+| | | Isolé | 0.53 |
+| | Sud | Non isolé | 0.4 |
 | | | Isolé | 0.55 |
 
 **Règles d'orientation** :

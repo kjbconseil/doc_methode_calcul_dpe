@@ -63,10 +63,10 @@ futi_j = a / (a + 1)
 
 Avec :
 ```
-a = 1 + I / tau
+a = 1 + tau / 15
 ```
 
-- `I` : Constante de temps de la zone pour le refroidissement
+- `tau` : constante de temps de la zone pour le refroidissement (h)
 
 ```
 tau = C(th) / (3600 * GV)
@@ -107,7 +107,7 @@ EER = 0.95 * SEER
 
 ### SEER : coefficient d'efficacité énergétique saisonnier
 
-| SEER | Avant 2000 | 2000-2014 | A partir de 2015 |
+| SEER | Avant 2008 | 2008-2014 | À partir de 2015 |
 |------|-----------|----------|-----------------|
 | Zone H1 et H2 | 3.6 | 6.5 | 6.7 |
 | Zone H3 | 3.25 | 5.7 | 7.5 |

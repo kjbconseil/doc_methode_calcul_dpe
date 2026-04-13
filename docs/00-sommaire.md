@@ -28,10 +28,17 @@ Ce dossier contient l'extraction détaillée des règles de calcul de la méthod
 | 20 | [20-dpe-collectif.md](20-dpe-collectif.md) | DPE dans le collectif |
 | 21 | [21-donnees-climatiques.md](21-donnees-climatiques.md) | Zones climatiques et données annexes |
 
-## Source officielle
+| CL | [CHANGELOG.md](CHANGELOG.md) | Changelog réglementaire - modifications par arrêtés successifs |
+
+## Sources officielles
 
 **Arrêté du 31 mars 2021** relatif aux méthodes et procédures applicables au diagnostic de performance énergétique et aux logiciels l'établissant.
 
 - NOR : LOGL2106175A
 - Publié au Journal Officiel de la République Française le 13 avril 2021, Texte 29 sur 114
-- Annexe 1 : Méthode de calcul 3CL-DPE 2021
+
+**Arrêté du 8 octobre 2021** modifiant la méthode de calcul et les modalités d'établissement du diagnostic de performance énergétique.
+
+- NOR : LOGL2118341A
+- Publié au Journal Officiel le 14 octobre 2021, Texte 34 sur 140
+- Remplace intégralement l'Annexe 1 : Méthode de calcul 3CL-DPE 2021 (*Dernière mise à jour - Octobre 2021*)

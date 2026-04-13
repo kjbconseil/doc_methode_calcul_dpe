@@ -80,7 +80,14 @@ Seule l'intermittence de l'appoint est prise en compte sur les installations bas
 - **Absent** : pas de reduit de nuit
 - **Central collectif** : possibilite de ralentis de nuit
 
+## Règles complémentaires (Octobre 2021)
+
+- Un plancher chauffant avec une régulation zone jour/zone nuit peut être associé à une régulation pièce par pièce
+- Un poêle sera modélisé comme un radiateur/convecteur pour la détermination de l'intermittence
+- Un système de chauffage divisé est un système pour lequel la génération et l'émission sont confondues. C'est le cas des convecteurs électriques, planchers chauffants électriques
+- Un système de chauffage central comporte un générateur central, individuel ou collectif, et une distribution par fluide chauffant : air ou eau
+
 ## Sources
 
-- **Source** : Arrêté du 31 mars 2021, Annexe 1 - Méthode de calcul 3CL-DPE 2021
-- **Section** : 8 (pages 54-56)
+- **Source** : Arrêté du 31 mars 2021, modifié par l'arrêté du 8 octobre 2021, Annexe 1 - Méthode de calcul 3CL-DPE 2021
+- **Section** : 8 (pages 55-57 version Octobre 2021)

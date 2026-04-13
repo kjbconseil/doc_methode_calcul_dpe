@@ -93,17 +93,18 @@ Avec :
 | | Avant 1948 | 1948-1974 | 1975- >2012 | Avant 1948 | 1948-1974 | 1975- >2012 |
 | Q4Pa_conv | 4.6 | 2 | 1.5 | 1 | 3.3 | 2.3 | 1 | 1.3 | 0.8 |
 
-**Règles speciales** :
+**Règles spéciales** :
 - Pour les bâtiments qui ont fait l'objet d'une mesure d'étanchéité à l'air moins de deux ans avant le diagnostic, la valeur mesurée de Q4Pa_conv peut être saisie
 - Pour les maisons construites avant 1948 avec une isolation des murs et/ou du plafond (isolation de plus de 50% des surfaces), Q4Pa_conv = 2 m³/(h.m²)
 - Pour les maisons construites entre 1948 et 1974 avec une isolation des murs et/ou du plafond (isolation de plus de 50% des surfaces), Q4Pa_conv = 1.9 m³/(h.m²)
+- **(Octobre 2021)** Pour les bâtiments ou logements construits avant 1948 et dont les menuiseries possèdent des joints, Q4Pa_conv = 2.5 m³/(h.m²). Cette condition est respectée si les menuiseries représentant plus de 50% de la surface totale possèdent des joints
 
 ### Débits conventionnels par type de ventilation
 
 | Type de ventilation | Qvarep_conv (m³/(h.m²)) | Qvasouf_conv (m³/(h.m²)) | Smea_conv (m³/(h.m²)) |
 |--------------------|------------------------|--------------------------|---------------------|
-| Ventilation par ouverture des fenêtres | 2.60 | 2.60 | 0 |
-| Ventilation par entrees d'air hautes et basses | 2.23 | 0 | 4 |
+| Ventilation par ouverture des fenêtres | 1.2 | 1.2 | 0 |
+| Ventilation par entrées d'air hautes et basses | 2.23 | 0 | 4 |
 | VMC SF Auto réglable < 1982 | 1.97 | 0 | 2 |
 | VMC SF Auto réglable de 1982 a 2000 | 1.65 | 0 | 2 |
 | VMC SF Auto réglable de 2001 a 2012 | 1.50 | 0 | 2 |
@@ -134,7 +135,8 @@ Avec :
 | Ventilation hybride avec entrees d'air hygro apres 2012 | 1.17 | 0 | 2 |
 | Ventilation mecanique sur conduit existant < 2012 | 2.24 | 0 | 4 |
 | Ventilation mecanique sur conduit existant apres 2012 | 1.97 | 0 | 4 |
-| Ventilation mecanique par insufflation | 2.25 | 0 | 4 |
+| Ventilation mécanique par insufflation | 2.25 | 0 | 4 |
+| Ventilation naturelle par conduit avec entrées d'air hygro | 2.23 | 0 | 4 |
 | Puits climatique sans échangeur < 2012 | 0.99 | 0.99 | 0 |
 | Puits climatique sans échangeur apres 2012 | 0.79 | 0.79 | 0 |
 | Puits climatique avec échangeur < 2012 | 0.31 | 0.36 | 0 |

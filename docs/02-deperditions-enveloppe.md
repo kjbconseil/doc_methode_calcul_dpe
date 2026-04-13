@@ -8,7 +8,7 @@
 
 ## Formule principale
 
-La somme GV des déperditions par les parois et par renouvellement d'air (W/K) s'exprimé de la manière suivante :
+La somme GV des déperditions par les parois et par renouvellement d'air (W/K) s'exprime de la manière suivante :
 
 ```
 GV = DPmur + DPplancher_bas + DPplancher_haut + DPmenuiserie + PT + DR

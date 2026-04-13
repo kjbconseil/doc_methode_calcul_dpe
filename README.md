@@ -6,13 +6,19 @@ Ce repository contient une transcription structuree en Markdown de la **méthode
 
 L'objectif est de disposer d'une version lisible, exploitable et navigable de cette méthode de calcul, afin de pouvoir l'implementer dans un moteur de calcul logiciel.
 
-## Source officielle
+## Sources officielles
 
-Le document source est le **Journal Officiel de la République Française** du 13 avril 2021, Texte 29 sur 114 :
+Les documents sources sont publiés au **Journal Officiel de la République Française** :
 
-- **Arrêté du 31 mars 2021** relatif aux méthodes et procedures applicables au diagnostic de performance énergétique et aux logiciels l'etablissant
-- **NOR** : LOGL2106175A
-- **Lien officiel** : [Télécharger le PDF sur Légifrance](https://www.legifrance.gouv.fr/download/pdf?id=doxMrRr0wbfJVvtWjfDP4rj1eH6w-xJoB6-2bmLS9gg=)
+1. **Arrêté du 31 mars 2021** relatif aux méthodes et procédures applicables au diagnostic de performance énergétique et aux logiciels l'établissant
+   - NOR : LOGL2106175A (JO du 13 avril 2021, Texte 29 sur 114)
+   - [Télécharger le PDF sur Légifrance](https://www.legifrance.gouv.fr/download/pdf?id=doxMrRr0wbfJVvtWjfDP4rj1eH6w-xJoB6-2bmLS9gg=)
+
+2. **Arrêté du 8 octobre 2021** modifiant la méthode de calcul et les modalités d'établissement du DPE
+   - NOR : LOGL2118341A (JO du 14 octobre 2021, Texte 34 sur 140)
+   - Remplace intégralement l'Annexe 1 (Méthode de calcul 3CL-DPE 2021)
+
+> La documentation ci-dessous intègre les modifications d'octobre 2021. Les changements sont détaillés dans [docs/CHANGELOG-octobre-2021.md](docs/CHANGELOG-octobre-2021.md).
 
 ## Contenu
 

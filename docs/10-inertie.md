@@ -37,7 +37,8 @@ Une paroi verticale est dite lourde si elle remplit l'une ou l'autre des conditi
   - Bloc perfoure en beton (ou autres materiaux lourds) : 10 cm ou plus
   - Bloc creux beton 11 cm ou plus
   - Brique pleine ou perforee 10.5 cm ou plus
-- Tout materiau ancien lourd (pierre, brique ancienne, terre, pisee...)
+- Tout matériau ancien lourd (pierre, brique ancienne, terre, pisé...)
+- Mur sandwich (béton / isolant / béton)
 
 ### Conditions spécifiques pour les refends
 
@@ -58,13 +59,14 @@ La classe d'inertie est déterminée par la combinaison plancher bas / plancher 
 
 | Plancher bas | Plancher haut | Paroi verticale | Classe d'inertie |
 |-------------|--------------|----------------|-----------------|
-| Lourd | Lourd | Lourde | **Tres lourde** |
+| Lourd | Lourd | Lourde | **Très lourde** |
+| - | Lourd | Lourde | **Lourde** |
 | Lourd | Lourd | - | **Lourde** |
 | Lourd | - | Lourde | **Lourde** |
 | Lourd | Lourd | - | **Lourde** |
+| - | - | Lourde | **Moyenne** |
 | - | Lourd | - | **Moyenne** |
 | Lourd | - | - | **Moyenne** |
-| - | - | Lourde | **Moyenne** |
 | - | - | - | **Légère** |
 
 > `-` signifie que la paroi n'est **pas** lourde (ou que l'information n'est pas pertinente)

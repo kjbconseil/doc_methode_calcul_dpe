@@ -39,10 +39,10 @@ Calcul du coefficient d'occupation maximal N_max :
   ```
 - Si `Sh_moy >= 70m²` :
   ```
-  N_max = 0.035 * Sh_moy
+  N_max = 0.025 * Sh_moy
   ```
 
-Calcul de nombre d'adultes équivalent N_adeq :
+Calcul du nombre d'adultes équivalent N_adeq :
 
 - Si `N_max <= 1.75` :
   ```
@@ -234,26 +234,26 @@ Avec :
 ### 11.6.2 Pertes des ballons électriques
 
 ```
-Q(p_stk) = 8592 * (45/24) * Vs * Cr
+Q(p_stk) = 8592 + (45/24) * Vs * Cr
 ```
 
 Avec :
 - `Vs` : volume du ballon de stockage (litres)
-- `Cr` : coefficient de perte du ballon de stockage (Wh/(l.°C.jour)
+- `Cr` : coefficient de perte du ballon de stockage (Wh/(l.°C.jour))
 
 | Coefficient de perte (Cr) | Volume du ballon (litres) | | | |
 |--------------------------|---|---|---|---|
 | | <= 100 | 100 < <= 200 | 200 < <= 300 | > 300 |
-| Chauffe-eau horizontal | 0.19 | 0.33 | 0.3 | 0.3 |
-| Chauffe-eau vertical (autre ou inconnu) | 0.13 | 0.21 | 0.22 | 0.22 |
-| Chauffe-eau vertical (Categories B ou 2 etoiles) | 0.22 | 0.22 | 0.2 | 0.18 |
-| Chauffe-eau vertical (Categories C ou 3 etoiles) | 0.25 | 0.2 | 0.18 | 0.16 |
+| Chauffe-eau horizontal | 0.39 | 0.33 | 0.3 | 0.3 |
+| Chauffe-eau vertical (autre ou inconnu) | 0.32 | 0.23 | 0.22 | 0.22 |
+| Chauffe-eau vertical (Catégorie B ou 2 étoiles) | 0.37 | 0.22 | 0.2 | 0.18 |
+| Chauffe-eau vertical (Catégorie C ou 3 étoiles) | 0.25 | 0.2 | 0.18 | 0.16 |
 
 ### 11.6.3 Rendement de stockage Rs
 
-**Pour les ballons électriques verticaux de categorie C ou 3+** :
+**Pour les ballons électriques verticaux de catégorie C ou 3+** :
 ```
-Rs = 1 / (1 + (Q(p_stk) + Rd) / Becs)
+Rs = 1 / (1 + (Q(p_stk) * Rd) / Becs)
 ```
 
 **Pour les autres ballons électriques** :
