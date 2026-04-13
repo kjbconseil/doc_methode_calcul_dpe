@@ -12,6 +12,8 @@ La classe du logement est déterminée par le **double seuil** CEP/EGES. La clas
 
 Le CEP est calculé à partir des consommations d'énergie finale multipliées par les facteurs de conversion en énergie primaire (voir [24-facteurs-conversion-energie-primaire.md](24-facteurs-conversion-energie-primaire.md)).
 
+Les EGES sont calculées à partir des consommations d'énergie finale multipliées par les facteurs d'émission de GES (voir [25-facteurs-emission-ges.md](25-facteurs-emission-ges.md)).
+
 ## Seuils pour les biens dont Sref > 40 m²
 
 ### Altitude < 800 m

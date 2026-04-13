@@ -35,6 +35,7 @@ Ce dossier contient l'extraction détaillée des règles de calcul de la méthod
 | 22 | [22-etiquettes-energie-climat.md](22-etiquettes-energie-climat.md) | Étiquettes énergie et climat - Seuils des classes DPE |
 | 23 | [23-tarifs-energie.md](23-tarifs-energie.md) | Évaluation des frais annuels d'énergie |
 | 24 | [24-facteurs-conversion-energie-primaire.md](24-facteurs-conversion-energie-primaire.md) | Facteurs de conversion énergie finale → énergie primaire |
+| 25 | [25-facteurs-emission-ges.md](25-facteurs-emission-ges.md) | Facteurs d'émission de gaz à effet de serre |
 
 | CL | [CHANGELOG.md](CHANGELOG.md) | Changelog réglementaire - modifications par arrêtés successifs |
 

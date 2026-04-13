@@ -74,6 +74,7 @@ Chaque fichier Markdown correspond à une section thématique de la méthode de 
 | [22-etiquettes-energie-climat.md](docs/22-etiquettes-energie-climat.md) | Annexe 5 - Étiquettes énergie et climat (seuils des classes DPE) |
 | [23-tarifs-energie.md](docs/23-tarifs-energie.md) | Annexe 7 - Évaluation des frais annuels d'énergie |
 | [24-facteurs-conversion-energie-primaire.md](docs/24-facteurs-conversion-energie-primaire.md) | Annexe 3 - Facteurs de conversion énergie finale vers énergie primaire |
+| [25-facteurs-emission-ges.md](docs/25-facteurs-emission-ges.md) | Annexe 4 - Facteurs d'émission de gaz à effet de serre |
 
 ### Changelog
 
