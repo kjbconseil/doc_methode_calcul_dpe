@@ -2,6 +2,23 @@
 
 Historique des modifications apportées à la méthode de calcul DPE par les arrêtés successifs.
 
+## Mars 2024 - Petites surfaces et tarifs d'énergie
+
+**Arrêté du 25 mars 2024** modifiant les seuils des étiquettes du diagnostic de performance énergétique pour les logements de petites surfaces et actualisant les tarifs annuels de l'énergie.
+
+- NOR : TREL2330369A
+- Publié au Journal Officiel le 20 avril 2024, Texte 15 sur 101
+- Entrée en vigueur : 1er juillet 2024
+
+### Modifications
+
+- **Surface de référence** : le terme « surface habitable » (Sh) est remplacé par « surface de référence » (Sref) dans l'ensemble de la méthode. La surface de référence inclut la surface habitable + vérandas chauffées + locaux chauffés d'occupation humaine (h >= 1,80 m)
+- **Seuils d'étiquettes petites surfaces** : nouveaux seuils CEP/EGES pour les logements dont Sref <= 40 m², par interpolation linéaire (voir [22-etiquettes-energie-climat.md](22-etiquettes-energie-climat.md))
+- **Tarifs d'énergie** : mise à jour de l'annexe 7 avec les prix 2022-2023 (voir [23-tarifs-energie.md](23-tarifs-energie.md))
+- **Attestation de reclassement** : les DPE réalisés entre le 1er juillet 2021 et le 30 juin 2024 pour des logements <= 40 m² peuvent obtenir une attestation de nouvelle étiquette via l'Observatoire DPE-Audit de l'ADEME
+
+---
+
 ## Octobre 2021 - Mise à jour de la méthode 3CL-DPE 2021
 
 **Arrêté du 8 octobre 2021** modifiant la méthode de calcul et les modalités d'établissement du diagnostic de performance énergétique.

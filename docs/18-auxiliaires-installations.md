@@ -114,12 +114,12 @@ Avec :
 Calcul de la longueur du réseau le plus defavorise :
 
 ```
-Lres = 5 + f_lm * Niv * sqrt(25 * Sh / Niv)
+Lres = 5 + f_lm * Niv * sqrt(25 * Sref / Niv)
 ```
 
 Avec :
 - `Niv` : nombre de niveaux du bâtiment
-- `Sh` : surface habitable du bâtiment (m²)
+- `Sref` : surface de référence du bâtiment (m²)
 - `f_lm` :
 
 | | f_lm | |
@@ -146,7 +146,7 @@ P_ci = 10^-3 * (GV) * (20 - T_base) * ratio
 **Puissance nominale du circulateur en froid** (P_cf) :
 
 ```
-P_cf = 10^-3 * (GV) * (34 - 26) + 0.03 * Sh + 0.25 * Sfenv
+P_cf = 10^-3 * (GV) * (34 - 26) + 0.03 * Sref + 0.25 * Sfenv
 ```
 
 Avec :
@@ -175,7 +175,7 @@ Les consommations des auxiliaires de distribution pour une installation d'ECS in
 Les pertes de distribution (kWh) sont données par :
 
 ```
-Q(dis_indiv) = (0.5 * Lvc / Sh) * Becs
+Q(dis_indiv) = (0.5 * Lvc / Sref) * Becs
 Q(dis_collect) = 0.112 * Becs
 Q(dis_solaire) = 0.039 * Becs
 ```
@@ -185,7 +185,7 @@ Avec :
 - `Becs` : besoin annuel d'eau chaude sanitaire (Wh)
 
 ```
-Lvc = 2 * (0.5 * Sh + Rd(ecs))
+Lvc = 2 * (0.5 * Sref + Rd(ecs))
 ```
 
 #### Prise en compte du bouclage pour l'ECS
@@ -199,7 +199,7 @@ q(bc) = Q(dis) / 5815
 Longueur par défaut du bouclage de l'ECS (en m) :
 
 ```
-L_bl = 4 * sqrt(Sh / Niv) + 5 * (Niv - 0.5)
+L_bl = 4 * sqrt(Sref / Niv) + 5 * (Niv - 0.5)
 ```
 
 La perte de charge dans le bouclage (kPa) :

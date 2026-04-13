@@ -56,18 +56,18 @@ Les apports internes moyens dus aux équipements sur une semaine type sont donc 
 A ces apports il faut ajouter :
 - **Ceux de l'éclairage** : qui correspondent à une puissance moyenne de 1.4 W/m² en fonctionnement. Les apports d'éclairage sont des moyennes annuelles sur toutes les zones climatiques. Cette valeur est pondérée par le nombre d'heures moyen d'éclairage (voir paragraphe 16.1, sur l'année c'est-a-dire 2173 h soit P167)
   - Les apports moyens annuels d'éclairage correspondant donc a 1.4 * 2173/8760 = **0.36 W/m²**
-- **Ceux des occupants** : on considéré un apport de chaleur de 90W par adulte équivalent (variable N_adeq déterminée au paragraphe 11.1). Le nombre d'adultes équivalents est calculé en fonction de la surface habitable. Les apports de chaleur dus aux occupants sont donc a N99 * N_adeq * 90/Sh
+- **Ceux des occupants** : on considéré un apport de chaleur de 90W par adulte équivalent (variable N_adeq déterminée au paragraphe 11.1). Le nombre d'adultes équivalents est calculé en fonction de la surface de référence. Les apports de chaleur dus aux occupants sont donc a N99 * N_adeq * 90/Sref
 
 ### Formule des apports internes en période de chauffe
 
 Les apports internes sur le mois j (en Wh) en période de chauffé sont donc :
 
 ```
-Ai_j = ((3.18 + 0.34) * Sh + 90 * (132/168) * N_adeq) * Nref_j
+Ai_j = ((3.18 + 0.34) * Sref + 90 * (132/168) * N_adeq) * Nref_j
 ```
 
 Avec :
-- `Sh` : surface habitable du logement (m²)
+- `Sref` : surface de référence du logement (m²)
 - `N_adeq` : nombre d'adultes équivalents (voir paragraphe 11.1)
 - `3.18` : apports internes moyens des équipements (W/m²)
 - `0.34` : apports moyens annuels d'éclairage (W/m²) (= 1.4 * 2173/8760)
@@ -101,7 +101,7 @@ En présence d'une véranda ou autre espace solarisé non chauffé, si ces appor
 De la même manière, les apports internes sur le mois j en période de refroidissement sont donc :
 
 ```
-Ai_fr_j = ((3.18 + 0.34) * Sh + 90 * (132/168) * N_adeq) * Nref_j
+Ai_fr_j = ((3.18 + 0.34) * Sref + 90 * (132/168) * N_adeq) * Nref_j
 ```
 
 Avec :

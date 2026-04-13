@@ -4,7 +4,7 @@
 
 - Temperature d'eau froide
 - Type de bâtiment
-- Surface habitable
+- Surface de référence
 - Nombre de logements d'un immeuble collectif
 
 ## 11.1 Calcul du besoin d'ECS
@@ -17,29 +17,29 @@ On considéré conventionnellement que le logement est inoccupe 7 jours par an (
 
 #### Logements individuels
 
-On definit la surface habitable moyenne d'un logement (m²) comme suit :
+On definit la surface de référence moyenne d'un logement (m²) comme suit :
 
 ```
-Sh_moy = Sh / Nb_log
+Sref_moy = Sref / Nb_log
 ```
 
 Avec :
-- `Sh` : surface habitable totale de la maison individuelle (m²)
+- `Sref` : surface de référence totale de la maison individuelle (m²)
 - `Nb_log` : nombre de logements (= 1 pour le traitement d'une maison individuelle contenant un seul logement)
 
 Calcul du coefficient d'occupation maximal N_max :
 
-- Si `Sh_moy < 30m²` :
+- Si `Sref_moy < 30m²` :
   ```
   N_max = 1
   ```
-- Si `30m² <= Sh_moy <= 70m²` :
+- Si `30m² <= Sref_moy <= 70m²` :
   ```
-  N_max = 1.75 - 0.01875 * (70 - Sh_moy)
+  N_max = 1.75 - 0.01875 * (70 - Sref_moy)
   ```
-- Si `Sh_moy >= 70m²` :
+- Si `Sref_moy >= 70m²` :
   ```
-  N_max = 0.025 * Sh_moy
+  N_max = 0.025 * Sref_moy
   ```
 
 Calcul du nombre d'adultes équivalent N_adeq :
@@ -55,29 +55,29 @@ Calcul du nombre d'adultes équivalent N_adeq :
 
 #### Logements collectifs
 
-On definit la surface habitable moyenne d'un logement (m²) comme suit :
+On definit la surface de référence moyenne d'un logement (m²) comme suit :
 
 ```
-Sh_moy = Sh / Nb_log
+Sref_moy = Sref / Nb_log
 ```
 
 Avec :
-- `Sh` : surface habitable totale de l'immeuble (m²)
+- `Sref` : surface de référence totale de l'immeuble (m²)
 - `Nb_log` : nombre de logements (>= 1 pour le traitement d'un appartement)
 
 Cette surface moyenne permet de déterminer le N_max pour un logement moyen :
 
-- Si `Sh_moy < 10m²` :
+- Si `Sref_moy < 10m²` :
   ```
   N_max = 1
   ```
-- Si `10m² <= Sh_moy <= 50m²` :
+- Si `10m² <= Sref_moy <= 50m²` :
   ```
-  N_max = 1.75 - 0.01875 * (50 - Sh_moy)
+  N_max = 1.75 - 0.01875 * (50 - Sref_moy)
   ```
-- Si `Sh_moy >= 50m²` :
+- Si `Sref_moy >= 50m²` :
   ```
-  N_max = 0.035 * Sh_moy
+  N_max = 0.035 * Sref_moy
   ```
 
 Calcul du nombre d'adultes équivalent N_adeq :

@@ -76,9 +76,9 @@ tau = C(th) / (3600 * GV)
 
 | Inertie | C(th) (J/K) |
 |---------|-------------|
-| Légère | 110 000 * Sh |
-| Moyenne | 165 000 * Sh |
-| Lourde ou tres lourde | 260 000 * Sh |
+| Légère | 110 000 * Sref |
+| Moyenne | 165 000 * Sref |
+| Lourde ou tres lourde | 260 000 * Sref |
 
 ## 10.3 Les consommations de refroidissement
 
@@ -86,8 +86,8 @@ tau = C(th) / (3600 * GV)
 
 - Performance de l'installation de refroidissement (SEER ou année d'installation)
 - Zone climatique
-- Surface habitable
-- Surface habitable refroidie
+- Surface de référence
+- Surface de référence refroidie
 
 ### Formule
 
@@ -116,7 +116,7 @@ EER = 0.95 * SEER
 
 Si le coefficient SEER du système de refroidissement est connu et justifié, le saisir directement.
 
-La consommation de refroidissement est déterminée pour le logement entier. Si seule une partie du logement est refroidie, alors la consommation de refroidissement du logement est obtenue en multipliant la consommation de froid calculée pour le logement entier par le rapport de la surface habitable de la partie refroidie a celle du logement.
+La consommation de refroidissement est déterminée pour le logement entier. Si seule une partie du logement est refroidie, alors la consommation de refroidissement du logement est obtenue en multipliant la consommation de froid calculée pour le logement entier par le rapport de la surface de référence de la partie refroidie a celle du logement.
 
 ## Sources
 

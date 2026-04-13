@@ -123,10 +123,10 @@ Ich = 1 / (Rg * Re * Rd * Rr)
 Les consommations associées a ces installations sont :
 
 ```
-Cch = SUM((SA_i / SH) * INT_i * Ich_i) * Bch
+Cch = SUM((SA_i / SREF) * INT_i * Ich_i) * Bch
 ```
 
-La part de la consommation traitée par chaque émetteur est proratisée par le ratio des surfaces habitables.
+La part de la consommation traitée par chaque émetteur est proratisée par le ratio des surfaces de référence.
 
 Les consommations sont mensualisées de la façon suivante :
 
@@ -310,7 +310,7 @@ Cch2 = 0.4 * Bch * INT2 * Ich2
 Les consommations associées a ces installations sont :
 
 ```
-Cch = SUM((SA_i / SH) * INT_i * Ich_i) * Bch
+Cch = SUM((SA_i / SREF) * INT_i * Ich_i) * Bch
 ```
 
 Les consommations sont mensualisées de la façon suivante :

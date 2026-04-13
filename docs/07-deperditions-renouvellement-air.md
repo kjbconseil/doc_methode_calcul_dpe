@@ -4,7 +4,7 @@
 
 - Type de bâtiment
 - Surface des parois déperditives hors plancher bas
-- Surface habitable
+- Surface de référence
 - Nombre de niveaux
 - Hauteur moyenne sous plafond
 - Type de ventilation
@@ -22,12 +22,12 @@ DR = Hvent + Hperm
 ### Déperdition par ventilation
 
 ```
-Hvent = 0.34 * Qvarep_conv * Sh
+Hvent = 0.34 * Qvarep_conv * Sref
 ```
 
 Avec :
-- `Qvarep_conv` : débit d'air extrait conventionnel par unite de surface habitable (m³/(h.m²)) (voir tableau par type de ventilation ci-apres)
-- `Sh` : surface habitable (m²)
+- `Qvarep_conv` : débit d'air extrait conventionnel par unite de surface de référence (m³/(h.m²)) (voir tableau par type de ventilation ci-apres)
+- `Sref` : surface de référence (m²)
 - `0.34` : chaleur volumique de l'air (Wh/(m³.K))
 
 ### Déperdition par infiltrations (perméabilité)
@@ -41,9 +41,9 @@ Avec :
 - `Qvinf` : débit d'air du aux infiltrations liees au vent (m³/h) :
 
 ```
-                    Hsp * Sh * n_50 * e
+                    Hsp * Sref * n_50 * e
 Qvinf = -----------------------------------------------
-         1 + (f/e) * ((Qvasouf_conv - Qvarep_conv) / (Hsp * Sh))²
+         1 + (f/e) * ((Qvasouf_conv - Qvarep_conv) / (Hsp * Sref))²
 ```
 
 ### Variables
@@ -51,7 +51,7 @@ Qvinf = -----------------------------------------------
 | Variable | Description |
 |----------|-------------|
 | `Hsp` | Hauteur moyenne sous plafond (m) |
-| `Sh` | Surface habitable (m²) |
+| `Sref` | Surface de référence (m²) |
 | `n_50` | Renouvellement d'air sous 50 Pascals (h⁻¹) |
 | `Qvasouf_conv` | Débit volumique conventionnel a souffler (m³/(h.m²)) (voir tableau) |
 | `Qvarep_conv` | Débit volumique conventionnel a reprendre (m³/(h.m²)) (voir tableau) |
@@ -69,11 +69,11 @@ Une facade exposee est une facade donnant sur l'extérieur.
 ### Renouvellement d'air sous 50 Pascals (n50)
 
 ```
-n50 = Q4Pa / ((4/50)^(2/3) * Hsp * Sh)
+n50 = Q4Pa / ((4/50)^(2/3) * Hsp * Sref)
 ```
 
 ```
-Q4Pa = Q4Pa_conv + 0.45 * Smea_conv * Sh
+Q4Pa = Q4Pa_conv + 0.45 * Smea_conv * Sref
 ```
 
 ### Permeabilite Q4Pa_conv

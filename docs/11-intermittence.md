@@ -23,13 +23,13 @@ INT = I0 / (1 + 0.1 * (G - 1))
 Avec :
 
 ```
-G = GV / (Hsp * Sh)
+G = GV / (Hsp * Sref)
 ```
 
 | Variable | Description |
 |----------|-------------|
 | `GV` | Déperditions annuelles de l'enveloppe (W/K) (déterminé en partie 3) |
-| `Sh` | Surface habitable (m²) |
+| `Sref` | Surface de référence (m²) |
 | `Hsp` | Hauteur moyenne sous plafond (m) |
 
 ## Valeurs I0

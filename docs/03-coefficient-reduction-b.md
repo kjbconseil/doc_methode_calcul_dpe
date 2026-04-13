@@ -62,7 +62,7 @@ Dans les autres cas, b est déterminé à l'aide des tableaux suivants, en fonct
 
 Les espaces tampons solarisés (vérandas, loggias fermees et non chauffées) beneficient d'apports solaires qui y generent des températures superieures a celles attendues dans les espaces non solarisés.
 
-**Rappel** : les vérandas chauffées sont traitées en surface habitable.
+**Rappel** : les vérandas chauffées sont traitées en surface de référence.
 
 Dans le cas de vérandas ou loggias fermees non chauffées, les coefficients de réduction de température pris sont donnés dans le tableau ci-dessous :
 

@@ -77,7 +77,7 @@ En présence de plusieurs types de murs, de planchers hauts ou de planchers bas,
 
 La démarche est la suivante :
 1. Determiner l'inertie de chaque niveau
-2. Considerer que l'inertie du bâtiment est celle la plus représentative en surface habitable
+2. Considerer que l'inertie du bâtiment est celle la plus représentative en surface de référence
 3. Pour les situations d'égalité, la règle est la suivante :
 
 | Inertie des niveaux | | | Inertie bâtiment |

@@ -54,7 +54,7 @@ Ppv = SUM(Ppv_j)
 ```
 
 ```
-Ppv_j = SUM(N_m * Scapteurs_m * r * Ppv_j * C * I_c) / Sh
+Ppv_j = SUM(N_m * Scapteurs_m * r * Ppv_j * C * I_c) / Sref
 ```
 
 Avec :

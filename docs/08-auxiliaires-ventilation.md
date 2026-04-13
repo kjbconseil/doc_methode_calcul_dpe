@@ -4,7 +4,7 @@
 
 - Type de VMC
 - Type de bâtiment
-- Surface habitable
+- Surface de référence
 
 ## Formule principale
 
@@ -31,12 +31,12 @@ Les puissances d'auxiliaires tabulées ci-dessus pour les VMC double flux integr
 ## Puissance Pvent_moy en immeuble collectif
 
 ```
-Pvent_moy = Pvent * Qvarep_conv * Sh
+Pvent_moy = Pvent * Qvarep_conv * Sref
 ```
 
 Avec :
-- `Qvarep_conv` : débit d'air extrait conventionnel par unite de surface habitable (m³/(h.m²)) (voir chapitre 4)
-- `Sh` : surface habitable (m²)
+- `Qvarep_conv` : débit d'air extrait conventionnel par unite de surface de référence (m³/(h.m²)) (voir chapitre 4)
+- `Sref` : surface de référence (m²)
 - `Pvent` : puissance des auxiliaires (kh/(m³/h)) :
 
 | | Pvent | |

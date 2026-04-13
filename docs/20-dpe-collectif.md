@@ -37,11 +37,11 @@ Pour caracteriser les espaces communs (couloirs, escaliers...) en volume chauff�
 ### 17.1.2 Définition d'un appartement "moyen"
 
 ```
-Sh(moy) = Sh / Nb_log
+Sref(moy) = Sref / Nb_log
 ```
 
 Avec :
-- `Sh` : surface habitable totale de l'immeuble (m²)
+- `Sref` : surface de référence totale de l'immeuble (m²)
 - `Nb_log` : nombre de logements de l'immeuble
 
 Les appartements « moyens » equipes d'un même type d'installation sont appeles sous-ensemble de l'immeuble. L'appartement peut donc appartenir a plusieurs sous-ensembles selon l'installation considérée.
@@ -49,7 +49,7 @@ Les appartements « moyens » equipes d'un même type d'installation sont appele
 A chaque appartement « moyen », on associé les caractéristiques du type de système observe, puis sur le nombre d'appartements de l'échantillon equipes de ce type de système :
 
 ```
-Pn(moy_systeme) = SUM(Pn(systeme_appartement) * Sh(systeme_appartement)) / SUM(Sh(systeme_appartement))
+Pn(moy_systeme) = SUM(Pn(systeme_appartement) * Sref(systeme_appartement)) / SUM(Sref(systeme_appartement))
 ```
 
 
@@ -72,7 +72,7 @@ En cas de système individuel de chauffage, refroidissement et/ou d'ECS, le calc
 
 En cas de système collectif de chauffage, de refroidissement et/ou d'ECS, les deux cas suivants sont a distinguer :
 - Dans le cas des générateurs autres qu'a combustion, les consommations de l'appartement sont calculées à partir des caractéristiques du générateur de l'immeuble (effet joule, PAC, réseau de chaleur)
-- Dans le cas des générateurs à combustion, les consommations de l'appartement sont calculées en considerant un générateur individuel virtuel, appele « générateur équivalent », identique au générateur collectif mais avec des caractéristiques pondérés par le rapport de la surface habitable de l'appartement a celle de l'immeuble
+- Dans le cas des générateurs à combustion, les consommations de l'appartement sont calculées en considerant un générateur individuel virtuel, appele « générateur équivalent », identique au générateur collectif mais avec des caractéristiques pondérés par le rapport de la surface de référence de l'appartement a celle de l'immeuble
 
 #### Tableau des equivalences installation individuelle vs collective
 
@@ -102,7 +102,7 @@ En cas de système collectif de chauffage, de refroidissement et/ou d'ECS, les d
 Les modalites de calcul des consommations de chauffage et des consommations d'ECS des appartements sont déterminées selon l'arbre de decision suivant :
 
 **Pour la consommation de chauffage** :
-- **Méthode 1** : Repartition des consommations de chauffage de l'immeuble au prorata de la surface habitable
+- **Méthode 1** : Repartition des consommations de chauffage de l'immeuble au prorata de la surface de référence
 - **Méthode 2** : Repartition des consommations de l'immeuble en fonction du besoin de chauffage et de la part d'individualisation des frais de chauffage
 
 **Pour la consommation d'ECS** :
@@ -112,16 +112,16 @@ Les modalites de calcul des consommations de chauffage et des consommations d'EC
 #### 17.2.2.2 Chauffage collectif avec individualisation des frais (Méthode 2)
 
 ```
-Cch_ap_j = (1 - coef_FC) * (Sh_ap_j / Sh) * Cch + coef_FC * Cle_ap_j * Cch
+Cch_ap_j = (1 - coef_FC) * (Sref_ap_j / Sref) * Cch + coef_FC * Cle_ap_j * Cch
 ```
 
 ```
-Caux_ch_ap_j = (1 - coef_FC) * (Sh_ap_j / Sh) * Caux_ch + coef_FC * Cle_ap_j * Caux_ch
+Caux_ch_ap_j = (1 - coef_FC) * (Sref_ap_j / Sref) * Caux_ch + coef_FC * Cle_ap_j * Caux_ch
 ```
 
 Avec :
-- `Sh_ap_j` : surface habitable de l'appartement j
-- `Sh` : surface habitable totale de l'immeuble
+- `Sref_ap_j` : surface de référence de l'appartement j
+- `Sref` : surface de référence totale de l'immeuble
 - `Cch` : consommation annuelle totale de chauffage de l'immeuble
 - `Caux_ch` : consommation annuelle des auxiliaires de chauffage totale de l'immeuble
 - `coef_FC` : coefficient d'individualisation des frais de chauffage

@@ -27,6 +27,8 @@ Ce dossier contient l'extraction détaillée des règles de calcul de la méthod
 | 19 | [19-eclairage-photovoltaique.md](19-eclairage-photovoltaique.md) | Éclairage et production d'électricité |
 | 20 | [20-dpe-collectif.md](20-dpe-collectif.md) | DPE dans le collectif |
 | 21 | [21-donnees-climatiques.md](21-donnees-climatiques.md) | Zones climatiques et données annexes |
+| 22 | [22-etiquettes-energie-climat.md](22-etiquettes-energie-climat.md) | Étiquettes énergie et climat - Seuils des classes DPE |
+| 23 | [23-tarifs-energie.md](23-tarifs-energie.md) | Évaluation des frais annuels d'énergie |
 
 | CL | [CHANGELOG.md](CHANGELOG.md) | Changelog réglementaire - modifications par arrêtés successifs |
 
@@ -42,3 +44,9 @@ Ce dossier contient l'extraction détaillée des règles de calcul de la méthod
 - NOR : LOGL2118341A
 - Publié au Journal Officiel le 14 octobre 2021, Texte 34 sur 140
 - Remplace intégralement l'Annexe 1 : Méthode de calcul 3CL-DPE 2021 (*Dernière mise à jour - Octobre 2021*)
+
+**Arrêté du 25 mars 2024** modifiant les seuils des étiquettes du DPE pour les logements de petites surfaces et actualisant les tarifs annuels de l'énergie.
+
+- NOR : TREL2330369A
+- Publié au Journal Officiel le 20 avril 2024
+- Entrée en vigueur : 1er juillet 2024
